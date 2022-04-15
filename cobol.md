@@ -16,8 +16,7 @@
 
 ## LAS DIVISIONES DE COMPONENTES.
 
-    - Idenfication division: Incluye varios datos:
-    Nombre de programa, instalación, fechas, etc…
+    - Idenfication division: Incluye varios datos: Nombre de programa, instalación, fechas, etc…
     Es obligatorio el “program ID” y Sección de división.
 
     - Enviroment division:
