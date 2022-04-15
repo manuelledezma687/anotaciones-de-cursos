@@ -68,7 +68,8 @@
 
 ## COMANDOS PERSONALIZADOS.
 
-    Código repetido --> support --> common.js ---> cypress Commands.add(..) ---> cv.loginuser(userdata) <---se utilizan variables abstraidas.
+    Código repetido --> support --> common.js ---> cypress Commands.add(..) 
+    ---> cv.loginuser(userdata) <---se utilizan variables abstraidas.
     *cy.screenshot()* Para capturas.
     *blackout* Negro para proteger datos.
     *stubs* Simula, sustituye comportamiento.
