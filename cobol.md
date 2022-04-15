@@ -1,8 +1,8 @@
-#CURSO DE COBOL.
+##CURSO DE COBOL.
 
 ##ORÍGENES.
-    Grace Hooper y el departamento de Defensa.
-    Mainframe de IBM-
+    - Grace Hooper y el departamento de Defensa.
+    - Mainframe de **IBM**.
 
 ##ESTRUCTURA DE UN PROGRAMA EN COBOL.
     Se mantuvo la longitud de 80 columnas desde las tarjetas perforadas:
