@@ -1,7 +1,8 @@
-#CURSO DE GIT Y GITHUB.
 
+# CURSO DE GIT Y GITHUB.
 
-##COMANDOS BÁSICOS.
+## COMANDOS BÁSICOS.
+
     *git init* lo usamos para determinar la carpeta en la que vamos a trabajar.
     *git status* lo usamos para saber si tenemos un archivo añadido o borrado en nuestro
     proyecto, para saber en la rama en la que estamos y si tenemos commits.
@@ -41,12 +42,14 @@
     *git pull* traerse cambios de una rama remota.
     *git push* subir cambios a una rama remota. Ejemplo: git push origin master.
 
-##LLAVES SSH.
+## LLAVES SSH.
+
     *Generar tus llaves SSH.* ssh-keygen -t rsa -b 4096 -C "tu@email.com"
     *Encender el "servidor" de llaves SSH de tu computadora* eval $(ssh-agent -s)
     *Añadir tu llave SSH a este "servidor"* ssh-add ruta-donde-guardaste-tu-llave-privada
 
-##COMANDOS PARA TRABAJAR CON ETIQUETAS.
+## COMANDOS PARA TRABAJAR CON ETIQUETAS.
+
     *git tag o git show-ref --tags* Listar los tags de nuestro repositorio local.
     *git tag -a nombre-del-tag id-del-commit* Crear un nuevo tag y asignarlo a un commit.
     *git tag -d nombre-del-tag* Borrar un tag en el repositorio local.
@@ -54,14 +57,16 @@
     *git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag* Borrar un tag del repositorio remoto.
 
 
-##OTROS COMANDOS ÚTILES.
+## OTROS COMANDOS ÚTILES.
+
     *git commit --amend* amend en inglés es remendar y lo que hará es que los cambios que
     hicimos nos los agregará al commit anterior.
     *.gitignore Documento para "ignorar archivos".*
     *git clean --dry-run* Para saber qué archivos vamos a borrar tecleamos.
     *git clean -f* Para borrar todos los archivos listados (que no son carpetas) tecleamos-
 
-##MALAS PRÁCTICAS EN GIT
+## MALAS PRÁCTICAS EN GIT.
+
     *git rebase master* Aplicamos rebase para traer los cambios de la rama que queremos
     *git cherry-pick IDCommit* Existe un mundo alternativo en el cual vamos avanzando en una rama
     pero necesitamos en master uno de esos avances de la rama, para eso
@@ -70,7 +75,8 @@
     historia, usa cherry-pick con sabiduría. Si no sabes lo que estás
     haciendo ten mucho cuidado.
 
-##GIT COMANDOS Y RECURSOS COLABORATIVOS.
+## GIT COMANDOS Y RECURSOS COLABORATIVOS.
+
     *git shortlog -sn* muestra cuantos commit han hecho cada miembros del equipo.
     *git shortlog -sn --all* muestra cuantos commit han hecho cada miembros del equipo
     hasta los que han sido eliminado.
@@ -83,8 +89,4 @@
     *git branch -a* se muestran todas las ramas tanto locales como remotas.
     *git blame ARCHIVO* -linea_inicial,linea_final= muestra quien hizo cada cosa linea
     por linea indicándole desde que linea ver ejemplo -L35,50.
-
-
-
-
 
