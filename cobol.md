@@ -1,11 +1,11 @@
-#CURSO DE COBOL.
+# CURSO DE COBOL.
 
-##ORÍGENES.
+## ORÍGENES.
 
     - Grace Hooper y el departamento de Defensa.
     - Mainframe de **IBM**.
 
-##ESTRUCTURA DE UN PROGRAMA EN COBOL.
+## ESTRUCTURA DE UN PROGRAMA EN COBOL.
     Se mantuvo la longitud de 80 columnas desde las tarjetas perforadas:
 
     - Columna 1 a 6 Se refiere a la posición al número de linea en el que te encuentras
@@ -14,7 +14,7 @@
     - Area B (Columna 12 a 72) se definen a los subniveles, sentencias, estructuras de control, etc…
     - Columnas 72 a la 80 (Originalmense usaban para poner comentarios referentes al programa)
 
-##LAS DIVISIONES DE COMPONENTES.
+## LAS DIVISIONES DE COMPONENTES.
 
     - Idenfication division: Incluye varios datos:
     Nombre de programa, instalación, fechas, etc…
