@@ -56,11 +56,11 @@
 
 ## SMOKE-TEST.
 
-    Baterias de pruebas que hace el equipo de programación antes de entregar el videojuego al equipo de pruebas (instalación y arranque).
+    Baterias de pruebas que hace el equipo de programación antes de entregar el videojuego al equipo de pruebas 
+    (instalación y arranque).
     
 ## BOOTCHECK.
 
-    Chequeo de arranque en el equipo de QA que incluye casos de pruebas de arranque e instalación, además algunas pruebas en los primeros niveles.
-
-
+    Chequeo de arranque en el equipo de QA que incluye casos de pruebas de arranque e instalación, 
+    además algunas pruebas en los primeros niveles.
 
