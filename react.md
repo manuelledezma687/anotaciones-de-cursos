@@ -1,8 +1,8 @@
 
-#CURSO DE REACT JS.
+# CURSO DE REACT JS.
 
+## INSTALACIÓN DE REACT Y REACT DOM.
 
-##INSTALACIÓN DE REACT Y REACT DOM.
     npm init 
     instrucciones (nombre, version, desc, endpoint, test, git)
     npm install react react-dom
@@ -37,10 +37,6 @@
 
                 ///
 -----
-##INSTALACIÓN DE WEBPACK Y BABEL.
+## INSTALACIÓN DE WEBPACK Y BABEL.
+
     npm install @babel/core @babel/present-env @babel/present-react
-
-
- 
-
-
