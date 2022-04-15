@@ -1,6 +1,7 @@
-##CURSO DE COBOL.
+#CURSO DE COBOL.
 
 ##ORÍGENES.
+
     - Grace Hooper y el departamento de Defensa.
     - Mainframe de **IBM**.
 
@@ -14,6 +15,7 @@
     - Columnas 72 a la 80 (Originalmense usaban para poner comentarios referentes al programa)
 
 ##LAS DIVISIONES DE COMPONENTES.
+
     - Idenfication division: Incluye varios datos:
     Nombre de programa, instalación, fechas, etc…
     Es obligatorio el “program ID” y Sección de división.
