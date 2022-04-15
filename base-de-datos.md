@@ -62,12 +62,15 @@
 
 ## DELETE.
 
-    - La sentencia DELETE se puede utilizar para eliminar todos los registros de una tabla pero tiene la desventaja de no ser tan eficiente ya que por ejemplo (entre
-    otras limitaciones), no resetea los valores de los campos auto_increment, por este motivo si se opta por vaciar completamente la tabla es recomendable utilizar la sentencia.
+    - La sentencia DELETE se puede utilizar para eliminar todos los registros de una tabla 
+    pero tiene la desventaja de no ser tan eficiente ya que por ejemplo (entre otras limitaciones), 
+    no resetea los valores de los campos auto_increment, por este motivo si se opta por vaciar completamente 
+    la tabla es recomendable utilizar la sentencia.
 
 ## TRUNCATE TABLE.
 
-    - la cual elimina los registros en su totalidad dejando vacía la tabla y de manera menos costosa (en términos de rendimiento) para el servidor de base de datos.
+    - la cual elimina los registros en su totalidad dejando vacía la tabla y de manera menos costosa 
+    (en términos de rendimiento) para el servidor de base de datos.
     TRUNCATE TABLE Productos;
 
 ## COUNT EJEMPLO.
@@ -133,11 +136,14 @@
 
 ## UNION.
 
-    - La sintaxis para combinar dos consultas mediante la cláusula UNION es la siguiente (Los corchetes ([]) indican que el elemento es opcional):
+    - La sintaxis para combinar dos consultas mediante la cláusula UNION es la siguiente 
+    (Los corchetes ([]) indican que el elemento es opcional):
     Ejemplo: consulta1 UNION [ALL] consulta2;
 
 ## MANERAS DE INGRESAR A MYSQL.
 
     - Workbech. la manera tradicional por el binario.
     - phpmyadmin. interfaz gráfica por el navegador.
-    - windows+r. terminal de linea de comandos de Windows --> ejecutar cmd ---> c:/xamp/mysql/bin/mysql ... --> show databases, etc.
+    - windows+r. terminal de linea de comandos de Windows --> ejecutar cmd ---> 
+    c:/xamp/mysql/bin/mysql ... --> show databases, etc.
+
