@@ -1,3 +1,4 @@
+
 # CURSO DE COBOL.
 
 ## ORÍGENES.
@@ -27,4 +28,3 @@
 
     - Procedure division:
     Se declaran todas las sentencias en parrafos, siempre debe finalizar con un punto cada bloque de código.
-
