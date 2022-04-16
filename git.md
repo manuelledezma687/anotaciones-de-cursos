@@ -3,33 +3,42 @@
 
 ## COMANDOS BÁSICOS.
 
-    *git init* lo usamos para determinar la carpeta en la que vamos a trabajar.
-    *git status* lo usamos para saber si tenemos un archivo añadido o borrado en nuestro
+    git init:  lo usamos para determinar la carpeta en la que vamos a trabajar.
+
+    git status:  lo usamos para saber si tenemos un archivo añadido o borrado en nuestro
     proyecto, para saber en la rama en la que estamos y si tenemos commits.
-    *git add* es para añadir un archivo a nuestra rama seguidamente ponemos entre
+
+    git add:  es para añadir un archivo a nuestra rama seguidamente ponemos entre
     comillas el nombre de nuestro archivo o poner un punto para añadir todos los
     archivos de nuestra carpeta.
-    *git rm* lo usamos para borrar un archivo que hayamos añadido, para eliminarlo por
+
+    git rm  lo usamos para borrar un archivo que hayamos añadido, para eliminarlo por
     completo de nuestra rama usamos git rm --cached. Otros casos:
     - git rm --force: Elimina los archivos de Git y del disco duro. Git guarda el
     registro de la existencia de los archivos, por lo que podremos recuperarlos si
     es necesario (pero debemos usar comandos más avanzados).
-    *git commit* se usa para añadir un commit a nuestra rama, también podemos ponerle un
+
+    git commit: se usa para añadir un commit a nuestra rama, también podemos ponerle un
     -m (MENSAJE)seguidamente ponemos entre comillas nuestro mensaje.
-    *git config* muestra configuraciones de git también podemos usar –list para mostrar la
+
+    git config: muestra configuraciones de git también podemos usar –list para mostrar la
     configuración por defecto de nuestro git y si añadimos --show-origin inhales
     nos muestra las configuraciones.
-    *git config -- global user.name:* cambia de manera global el nombre del usuario, 
+    git config -- global user.name:__ cambia de manera global el nombre del usuario, 
     seguidamente ponemos entre comillas nuestro nombre.
-    *git config --global user.email:* cambia de manera global el email del usuario, seguidamente 
+    git config --global user.email:__ cambia de manera global el email del usuario, seguidamente 
     ponemos entre comillas nuestro nombre.
-    *git log:* se usa para ver la historia de nuestros archivos, los commits, el usuario que lo
+
+    git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo
     cambió, cuando se realizaron los cambios etc. seguidamente ponemos el
     nombre de nuestro archivo.
-    *git show* nos muestra los cambios que han existido sobre un archivo
-    *git nombre-del-archivo-o-carpeta* para añadir archivos y carpetas individuales o git add -A para 
+    
+    git show: nos muestra los cambios que han existido sobre un archivo.
+
+    git nombre-del-archivo-o-carpeta: para añadir archivos y carpetas individuales o git add -A para 
     mover todos los archivos de nuestro proyecto (tanto Untrackeds como unstageds).
-    *git reset HEAD* nos ayuda a sacar archivos del estado Staged para devolverlos a su estado
+
+    git reset HEAD: nos ayuda a sacar archivos del estado Staged para devolverlos a su estado
     anterior. Si los archivos venían de Unstaged, vuelven allí. Y lo mismo se venían
     de Untracked.
         git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los
@@ -38,14 +47,18 @@
         git reset --soft: Borramos todo el historial y los registros de Git pero guardamos 
         los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a
         un nuevo commit.
-    *git checkout rama* Cambiar de rama en git para ver últimos commits etc.
-    *git pull* traerse cambios de una rama remota.
-    *git push* subir cambios a una rama remota. Ejemplo: git push origin master.
+
+    git checkout rama: Cambiar de rama en git para ver últimos commits etc.
+    git pull: traerse cambios de una rama remota.
+    git push: subir cambios a una rama remota. Ejemplo: git push origin master.
+    git fetch: Trae los archivos que no están siendo trackeados al repositorio local.
 
 ## LLAVES SSH.
 
     *Generar tus llaves SSH.* ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+
     *Encender el "servidor" de llaves SSH de tu computadora* eval $(ssh-agent -s)
+
     *Añadir tu llave SSH a este "servidor"* ssh-add ruta-donde-guardaste-tu-llave-privada
 
 ## COMANDOS PARA TRABAJAR CON ETIQUETAS.
@@ -89,4 +102,3 @@
     *git branch -a* se muestran todas las ramas tanto locales como remotas.
     *git blame ARCHIVO* -linea_inicial,linea_final= muestra quien hizo cada cosa linea
     por linea indicándole desde que linea ver ejemplo -L35,50.
-
