@@ -149,6 +149,7 @@
     - Principios de sustitución de Liskov: Sustituir una clase derivada de una clase principal, sin que esta última se rompa.  
     Los objetos deberían ser reemplazables por instancias de sus subtipos. 
     - Segregación de interfaces: No tener una interfaz con todas las responsabilidades, sino varias interfaces limpias y simples.
-    - Inversión de dependencias: Separar las interfaces entre componentes high level de los low levels, una mezcla de Open close con segregación de interfaces.
+    - Inversión de dependencias: Separar las interfaces entre componentes high level de los low levels, una mezcla de Open close 
+    con segregación de interfaces.
 
 
