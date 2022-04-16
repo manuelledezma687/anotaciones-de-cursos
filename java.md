@@ -1,6 +1,11 @@
 
 # CURSO DE JAVA SE.
 
+## GETTER Y SETTERS.
+
+    - Los getters son un tipo de función que nos devuelve el valor asignado por una variable.
+    - Los setters son un tipo de función que nos establece el tipo de valor de una variable.
+
 ## LAS VARIABLES EN JAVA.
 
     -las variables en java deben tener nombre unicos
@@ -136,5 +141,14 @@
     Nota: si nuestras funciones van a devolver argumentos, lo mejor es que especifiques el tipo de dato que serán. 
     Para utilizar nuestras funciones solo debemos asignar el resultado de la función y sus parámetros a una 
     variable con el mismo tipo de dato de la función.
+
+## PRINCIPIOS SOLID.
+
+    - Responsabilidad única: Cada clase debe tener una única responsabilidad.
+    - Open Close: Clases y funciones deberian ser pensadas para ser extendidas desde afuera pero no modificables desde adentro.
+    - Principios de sustitución de Liskov: Sustituir una clase derivada de una clase principal, sin que esta última se rompa.  
+    Los objetos deberían ser reemplazables por instancias de sus subtipos. 
+    - Segregación de interfaces: No tener una interfaz con todas las responsabilidades, sino varias interfaces limpias y simples.
+    - Inversión de dependencias: Separar las interfaces entre componentes high level de los low levels, una mezcla de Open close con segregación de interfaces.
 
 
