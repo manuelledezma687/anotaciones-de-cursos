@@ -8,7 +8,7 @@
 
     *Herencia* Compartir métodos y/o clases.
     *Abstracción* Aislar, separar.
-    *Poliformismo* Mismo elemento, pero diferente comportamiento.
+    *Polimorfismo* Mismo elemento, pero diferente comportamiento.
     *Modularidad* Separar en módulos.
     *Encapsulamiento* Se garantiza la integridad del código al ser separado.
 
