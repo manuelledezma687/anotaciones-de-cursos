@@ -1,6 +1,5 @@
 # Apuntes del curso de Automatización de Pruebas con Cypress.
 
-
 ## Instalación de Cypress.
 
     Instalar o inicializar node
@@ -163,7 +162,6 @@
 
     *cy.screenshot()* Para capturas.
     *blackout* Negro para proteger datos.
-    *stubs* Simula, sustituye comportamiento.
     *spies* Interviene en los llamados.
     *clocks* Altera programaticamente la hora y fecha del entorno.
 
@@ -179,3 +177,87 @@
     *skip()* Saltar.
 
     hooks --> Pueden entrar los Assertions. 
+
+## Tipos de esperas.
+
+    cy.get('.ButtonLogin-cta', { timeout: 6000 })// Aca se puede agregar el should.
+    cy.wait(tiempo en mlsegundos)
+
+## Tipos de select para dropdown.
+
+		//Seleccionar por index
+		cy.get('.custom-select').select(10)
+
+		//Seleccionar por valor
+		cy.get('.custom-select').select('3').should('have.value', '3')
+
+		//Seleccionar por texto
+		cy.get('.custom-select').select('Greece').should('have.value', '4')
+
+## Interactuando con tablas (Ejemplo).
+
+		cy.get('#customers') -- se llama al identificador
+			.find('th') -- se encuentra el header o columna. 
+            .each() -- itera en elementos encontrados
+            first() -- se trae el primer elemento o sino podemos usar
+            una posición:
+			.eq(1)  --
+			.invoke('text')  -- se invoca el texto.
+			.should('equal', 'Contact') -- se comprueba.
+
+## Ejemplo para interactuar con un date pickers.
+
+    Si cuesta encontrar el elemento se puede ir a un elemento padre y se puede usar
+    find para encontrar el hijo.
+
+    		cy.get('datepicker-overview-example')
+			.find('input')
+			.eq(0)
+			.type('12/02/2005{enter}')
+
+		cy.get('datepicker-overview-example').find('svg').click()
+
+## Ejemplo con popups o tooltips.
+
+    Al clickear el popups podemos hacer lo siguiente:
+    cy.on('window:confirm', (confirm) => {
+        expect(confirm).to.equal('Do you confirm action?')
+        cy.contains('You selected Ok').should('exist')
+
+    Vamos a empezar a usar un stub() el cual intercepta el evento en el DOM.
+    Otro ejemplo:
+
+      const stub = cy.stub()
+        cy.on('window:confirm', stub)
+        cy.get('#confirmButton').click().then(() => {
+            expect(stub.getCall(0)).to.be.calledWith('Do you confirm action?')
+        })
+        cy.contains('You selected Ok').should('exist')
+
+    Rechazar un popup:
+        cy.get('#confirmButton').click()
+        cy.on('window:confirm', (confirm) => {
+             expect(confirm).to.equal('Do you confirm action?')
+             return false
+         })
+         cy.contains('You selected Cancel').should('exist')
+
+    Ejemplo para tooltip:
+    Trigger funciona para disparar un evento:
+        cy.visit('/tool-tips')
+        cy.get('#toolTipButton').trigger('mouseover')
+        cy.contains('You hovered over the Button').should('exist')
+        cy.get('#toolTipButton').trigger('mouseout')
+        cy.contains('You hovered over the Button').should('not.exist')
+
+
+## Drag and drops.
+    Utilizando trigger podemos hacer cosas más avanzadas para poder disparar
+    eventos como arrastrar y soltar.
+
+    Ejemplo:
+            cy.get('#dragBox')
+            .trigger('mousedown', {which: 1, pageX: 600, pageY: 100})
+            .trigger('mousemove', {which: 1, pageX: 600, pageY: 600})
+            .trigger('mouseup')
+
