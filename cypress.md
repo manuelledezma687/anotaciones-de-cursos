@@ -1,10 +1,4 @@
-# Apuntes del curso de Automatización de Pruebas en UI con Cypress.
-
-## Comando para correr Cypress en este proyecto desde la consola:
-
-    -npm run test:ui
-    -npm run test:headless
-    -npm run test:headless:chrome
+# Apuntes del curso de Automatización de Pruebas con Cypress.
 
 ## Instalación de Cypress.
 
@@ -116,48 +110,45 @@ forma nativa:
 
 Aparte de las dev tools podemos hacer lo siguiente, por ejemplo un plugin:
 
----
 
-on('task', {
-		log(message) {
-			// este log se muestra en la terminal del servidor que sirve para modo headless
-			console.log(`Soy el console log del task ${message}`)
-			return null
-		},
-	})
----
+    on('task', {
+            log(message) {
+                // este log se muestra en la terminal del servidor que sirve para modo headless
+                console.log(`Soy el console log del task ${message}`)
+                return null
+            },
+        })
 
 
-implementación ---->   cy.task('log', inputs.legth)
 
-- imprimir console log
+    implementación ---->   cy.task('log', inputs.legth)
 
-    cy.get().then(console.log)
+    - imprimir console log
 
-- pausar:
-cy.pause()  --> pausa la ejecución donde queremos inspeccionar.
+        cy.get().then(console.log)
+
+    - pausar:
+    cy.pause()  --> pausa la ejecución donde queremos inspeccionar.
 
 
 ## Secuencias para interacciones con el type.
 
-Sequence	Notes
-{{}	Escribe la clave literal {
-{backspace}	Borra el personaje a la izquierda del cursor
-{del}	Borra el personaje a la derecha del cursor
-{downarrow}	Mueve el cursor hacia abajo
-{end}	Mueve el cursor al final de la línea
-{enter}	Teclea la tecla Intro
-{esc}	Teclea la tecla Escape
-{home}	Mueve el cursor al principio de la línea
-{insert}	Inserta un personaje a la derecha del cursor
-{leftarrow}	Mueve el cursor a la izquierda
-{movetoend}	Desplaza el cursor al final del elemento mecanizable
-{movetostart}	Desplaza el cursor al inicio del elemento mecanizable
-{pagedown}	Se desplaza hacia abajo
-{pageup}	Se desplaza hacia arriba
-{rightarrow}	Mueve el cursor a la derecha
-{selectall}	Selecciona todo el texto creando un selection range
-{uparrow}	Mueve el cursor hacia arriba
+    {backspace} Borra el personaje a la izquierda del cursor.
+    {del} Borra el personaje a la derecha del cursor.
+    {downarrow} Mueve el cursor hacia abajo.
+    {end}	Mueve el cursor al final de la línea.
+    {enter} Teclea la tecla Intro.
+    {esc}	Teclea la tecla Escape.
+    {home} Mueve el cursor al principio de la línea.
+    {insert} Inserta un personaje a la derecha del cursor.
+    {leftarrow} Mueve el cursor a la izquierda.
+    {movetoend} Desplaza el cursor al final del elemento mecanizable.
+    {movetostart} Desplaza el cursor al inicio del elemento mecanizable.
+    {pagedown} Se desplaza hacia abajo.
+    {pageup}  Se desplaza hacia arriba.
+    {rightarrow} Mueve el cursor a la derecha.
+    {selectall} Selecciona todo el texto creando un selection range.
+    {uparrow}	Mueve el cursor hacia arriba.
 
 ## Modo Headless.
 
@@ -187,4 +178,3 @@ describe('Probando configuracion', {browser:'!chrome'},() =>
     *skip()* Saltar.
 
     hooks --> Pueden entrar los Assertions. 
-
